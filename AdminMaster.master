@@ -18,6 +18,7 @@
         <link runat="server" href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet" />
         <link runat="server" href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet" />
         <link runat="server" href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -56,22 +57,39 @@
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                 <ul class="nav navbar-nav">
+
                                     <li><a href="../Default.aspx">Home</a></li>
-                                    <li><a href="Pages/Movies.aspx">Movies</a></li>
-                                    <li><a href="Pages/Music.aspx">Music</a></li>
-                                    <li><a href="Pages/TVShow.aspx">TVShow</a></li>
-                                    <li><a href="Pages/AboutUs.aspx">AboutUs</a></li>
+                                    <li><a href="../NewMovies.aspx">Movies</a></li>
+                                    <li><a href="../NewMusic.aspx">Music</a></li>
+                                    <li><a href="../NewShow.aspx">TV Show</a></li>
+                                    
 
                                 </ul>
 
 
 
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li><a href="#">Manage</a></li>
+
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Manage<b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="Pages/AddMovie.aspx">Add Movie</a> </li>
+                                            <li><a href="AddShow.aspx">Add Show</a></li>
+                                            <li><a href="AddMusic.aspx">Add Music</a></li>
+
+                                        </ul>
+
+                                    </li>                                                                 
+                                   
+                                       <li><a href="#">
+                                            <span class="glyphicon glyphicon-shopping-cart"></span>
+                                        </a></li>                                                                      
+                                   
                                     <li>
+
                                         <asp:Button ID="BtAdminLogout" runat="server" cssClass = "btn btn-default navbar-btn" Text="Logout" OnClick="BtAdminLogout_Click" />
 
-                                    </li>
+                                   </li>
                                 </ul>
                             </div>
                             <!-- /.navbar-collapse -->
@@ -92,10 +110,10 @@
     <hr />
 
            <!-- Footer -->
-            <footer class="fpos" style="top:1400px;">
+            <footer  style="top:400px;">
                 <div class="row">
                     <div class="col-lg-12">
-                        <p>Copyright &copy; Ashwin Bordoloi</p>
+                        <p>Copyright &copy; Ashwin Bordoloi, InEight India</p>
                     </div>
                 </div>
             </footer>

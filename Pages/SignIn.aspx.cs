@@ -43,7 +43,7 @@ public partial class Pages_SignIn : System.Web.UI.Page
                 if (Utype=="U")
                 {
                     Session["USERNAME"] = UserName.Text;
-                    Response.Redirect("~/Pages/UserHome.aspx");
+                    Response.Redirect("~/NewUserHome.aspx");
 
                 }
                 if (Utype == "A")

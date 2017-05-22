@@ -136,7 +136,7 @@
             <footer class="fpos" style="top:1400px;">
                 <div class="row">
                     <div class="col-lg-12">
-                        <p>Copyright &copy; Ashwin Bordoloi</p>
+                        <p>Copyright &copy; Ashwin Bordoloi, InEight India</p>
                     </div>
                 </div>
             </footer>

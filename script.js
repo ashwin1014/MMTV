@@ -11,3 +11,15 @@
         $('.search-input').focus();
     });
 });
+
+
+
+
+function openInNewTab()
+{
+        window.document.forms[0].target = '_blank'; 
+        setTimeout(function () { window.document.forms[0].target = ''; }, 0);
+}
+
+
+
